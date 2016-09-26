@@ -46,10 +46,11 @@ download.done(function() {
     
     //output tallied results
     output = categories.slice();
-    output[output.length] = "Total";
+    output[output.length] = "Total " + categories;
     for (var r=0; r<output.length; r++) {
       if (outputControl) console.log(results[r+output.length].toString(), output[r]+" for $", (Math.round(results[r]*100) / 100).toString());
     }
+    window.alert(results[output.length*2-1].toString() +" " + output[output.length-1] + " for $" + (Math.round(results[output.length-1]*100) / 100).toString());
     if (outputControl) console.log("fin with code 0");
   }
 })
