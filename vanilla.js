@@ -1,3 +1,4 @@
+//Copyright 2016 Andrew Paradi
 //inputs
 var baseURL = "http://shopicruit.myshopify.com/products.json";
 var pageURL = "?page="
