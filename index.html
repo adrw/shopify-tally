@@ -1,10 +1,37 @@
 <html>
   <head>
+    <title>Andrew Paradi | Shopify Tally</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+      h1, h2, h3, h4, body {
+          font-family: Avenir Next, Helvetic, sans-serif;
+      }      
+      @media (max-width: 767px) {
+        img {
+          max-width: 90%;
+        }
+      }
+    </style>
   </head>
 
   <body>
+    <h1>Welcome to Shopify-Tally</h1>
+    <p>Open up your Browser Console to see the tally compute in realtime</p>
+    <p>Clone the <a href="https://github.com/andrewparadi/shopify-tally">Source Code</a> to add different categories or parameters</p>
+    <img src="screen.png" alt="Shopify Tally Screenshot"/>
+    <p>&copy; 2016 <a href="http://www.andrewparadi.com/">Andrew Paradi</a></p>
     <script src="vanilla.js">
+    </script>
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-15052723-11']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
     </script>
   </body>
 </html>
